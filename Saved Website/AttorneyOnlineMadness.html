@@ -14,74 +14,7 @@
     <link rel="stylesheet" href="//editor.silex.me/static/2.7/normalize.css" data-silex-static="">
     <link rel="stylesheet" href="//editor.silex.me/static/2.7/front-end.css" data-silex-static="">
 
-    <style type="text/css" class="silex-style">
-        body {
-            margin: 0;
-            padding: 0;
-            background: #ccc;
-        }
-        
-        .nav ul {
-            list-style: none;
-            background-color: #444;
-            text-align: center;
-            padding: 0;
-            margin: 0;
-        }
-        
-        .nav li {
-            font-family: 'Oswald', sans-serif;
-            font-size: 1.2em;
-            line-height: 40px;
-            height: 40px;
-            border-bottom: 1px solid #888;
-        }
-        
-        .nav a {
-            text-decoration: none;
-            color: #fff;
-            display: block;
-            transition: .3s background-color;
-        }
-        
-        .nav a:hover {
-            background-color: #005f5f;
-        }
-        
-        .nav a.active {
-            background-color: #fff;
-            color: #444;
-            cursor: default;
-        }
-        
-        @media screen and (min-width: 600px) {
-            .nav li {
-                width: 120px;
-                border-bottom: none;
-                height: 50px;
-                line-height: 50px;
-                font-size: 1.4em;
-            }
-            /* Option 1 - Display Inline */
-            .nav li {
-                display: inline-block;
-                margin-right: -4px;
-            }
-            /* Options 2 - Float
-  .nav li {
-    float: left;
-  }
-  .nav ul {
-    overflow: auto;
-    width: 600px;
-    margin: 0 auto;
-  }
-  .nav {
-    background-color: #444;
-  }
-  */
-        }
-    </style>
+    <style type="text/css" class="silex-style"></style>
     <script type="text/javascript" class="silex-script"></script>
     <style class="silex-inline-styles" type="text/css">
         .body-initial {
@@ -130,14 +63,6 @@
             background-color: transparent;
             width: 1200px;
         }
-        
-        .silex-id-1516376686110-8 {
-            width: 58px;
-            background-color: transparent;
-            min-height: 56px;
-            top: 10px;
-            left: 11px;
-        }
     </style>
     <title>Michael's Attorney Madness</title>
     <script type="text/javascript" class="silex-json-styles">
@@ -170,11 +95,25 @@
 
 
     <style id="current-page-style">
-        .page-downloads {
+        .page-home-page {
             display: inherit;
         }
     </style>
     <!-- Silex HEAD tag do not remove -->
+
+    <body class="news">
+        <header>
+            <div class="nav">
+                <ul>
+                    <li class="home"><a href="#">Home</a></li>
+                    <li class="tutorials"><a class="active" href="#">Tutorials</a></li>
+                    <li class="about"><a href="#">About</a></li>
+                    <li class="news"><a href="#">Newsletter</a></li>
+                    <li class="contact"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+    </body>
     <!-- End of Silex HEAD tag do not remove -->
 </head>
 
@@ -185,7 +124,7 @@
                 class="silex-element-content">
         </div>
 
-        <a id="page-home-page" data-silex-type="page" class="page-element">Home Page</a><a id="page-downloads" data-silex-type="page" class="page-element page-link-active">Downloads</a></div>
+        <a id="page-home-page" data-silex-type="page" class="page-element page-link-active">Home Page</a><a id="page-downloads" data-silex-type="page" class="page-element">Downloads</a></div>
 
 
 
@@ -236,114 +175,7 @@
 
 
 
-    <div data-silex-type="html" class="editable-style silex-id-1516376686110-8 html-element page-home-page paged-element" data-silex-id="silex-id-1516376686110-8" style="">
-        <div class="silex-element-content">
-            <style>
-                /* Navigation Menu - Background */
-                
-                .navigation {
-                    /* critical sizing and position styles */
-                    height: 100%;
-                    position: fixed;
-                    top: 0;
-                    bottom: 0;
-                    left: -250px;
-                    z-index: 10;
-                    /* non-critical appearance styles */
-                    list-style: none;
-                    background: #111;
-                    margin: 0;
-                }
-                /* Navigation Menu - List items */
-                
-                .nav-item {
-                    /* non-critical appearance styles */
-                    width: 200px;
-                    border-top: 1px solid #111;
-                    border-bottom: 1px solid #000;
-                }
-                
-                .nav-item a {
-                    /* non-critical appearance styles */
-                    display: block;
-                    padding: 1em;
-                    color: white;
-                    font-size: 1.2em;
-                    text-decoration: none;
-                }
-                
-                .nav-item a:hover,
-                .nav-item a.page-link-active {
-                    color: #2b4b98;
-                }
-                /* Nav Trigger */
-                
-                .nav-trigger {
-                    /* critical styles - hide the checkbox input */
-                    position: absolute;
-                    clip: rect(0, 0, 0, 0);
-                }
-                
-                label[for="nav-trigger"] {
-                    position: absolute;
-                    left: 15px;
-                    top: 15px;
-                    z-index: 2;
-                    height: 30px;
-                    width: 30px;
-                    cursor: pointer;
-                }
-                
-                label[for="nav-trigger"]:before {
-                    content: "";
-                    position: absolute;
-                    width: 100%;
-                    height: 5px;
-                    background: white;
-                    box-shadow: 0 10px 0 0 white, 0 20px 0 0 white;
-                }
-                
-                .silex-runtime label[for="nav-trigger"] {
-                    /* only at runtime, needed as the nav is fixed*/
-                    position: fixed;
-                }
-                /* Make the Magic Happen */
-                
-                .nav-trigger+label,
-                .navigation {
-                    transition: left 0.2s;
-                }
-                
-                .nav-trigger:checked+label {
-                    left: 275px;
-                }
-                
-                .nav-trigger:checked~.navigation {
-                    left: 0;
-                }
-                
-                body {
-                    /* Without this, the body has excess horizontal scroll when the menu is open */
-                    overflow-x: hidden;
-                }
-                /* Additional non-critical styles */
-            </style>
-            <script>
-                // when Silex says a page changed, close the menu
-                $('body').on('pageChanged', function (event, pageName) {
-                    $('#nav-trigger').prop('checked', false);
-                });
-            </script>
-            <input id="nav-trigger" class="nav-trigger" type="checkbox">
-            <label for="nav-trigger"></label>
-            <ul class="navigation">
-                <li class="nav-item"><a href="#!page-Home-Page">Home</a></li>
-                <li class="nav-item"><a href="#!page-Downloads">Downloads</a></li>
-                <li class="nav-item"><a href="#!page-details2" class="">Sum expectantes</a></li>
-                <li class="nav-item"><a href="#!page-contact" class="">Contact</a></li>
-            </ul>
-        </div>
-    </div>
+
 
 
 </body>
