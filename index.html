@@ -189,9 +189,9 @@
                         <div class="skill-bar-percent"></div>
                     </div>
 
-                    <div class="skillbar clearfix " data-percent="30%">
+                    <div class="skillbar clearfix " data-percent="20%">
                         <div class="skillbar-title" style="background: ;"><span>Downloads Page</span></div>
-                        <div class="skillbar-bar" style="background-color: rgb(40, 253, 46); width: 238.5px;"></div>
+                        <div class="skillbar-bar" style="background-color: rgb(40, 253, 46); width: 159px;"></div>
                         <div class="skill-bar-percent"></div>
                     </div>
 
@@ -271,7 +271,7 @@
                     <script type="text/javascript">
                         var fillBarSize = $('.skillbar').width() * (1 - 25 / 100);
                         $('.skillbar').each(function(){
-                          $(this).find('.skillbar-bar').delay(500).animate({
+                          $(this).find('.skillbar-bar').delay(1000).animate({
                             width: (fillBarSize * parseInt($(this).attr('data-percent')) / 100) + 'px'
                           },6000);
                         });
