@@ -7,19 +7,22 @@
             top: 100px;
             left: NaNpx;
             background-color: transparent;
+            min-width: 1200px;
         }
         
         .silex-id-1478366444112-0 {
-            min-height: 100px;
+            min-height: 127px;
             background-color: transparent;
             width: 1200px;
+            top: 15px;
+            left: 100px;
         }
         
         .silex-id-1516472171614-2 {
-            width: 1196px;
-            min-height: 100px;
-            top: -1px;
-            left: 4px;
+            width: 1172px;
+            min-height: 98px;
+            top: 16px;
+            left: 12px;
         }
         
         .silex-id-1474394621033-3 {
@@ -43,12 +46,5 @@
             min-height: 100px;
             background-color: transparent;
             width: 1200px;
-        }
-        
-        .silex-id-1442914737143-3 {
-            min-height: 53px;
-            width: 349px;
-            top: 29px;
-            left: 430px;
         }
     
