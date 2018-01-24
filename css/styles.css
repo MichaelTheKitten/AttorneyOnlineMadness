@@ -1,6 +1,6 @@
 
         .body-initial {
-            background-color: rgba(255, 255, 255, 1);
+            background-color: rgba(42, 149, 35, 1);
         }
         
         .silex-id-1478366444112-1 {
@@ -29,6 +29,7 @@
             top: 5px;
             left: 0px;
             min-width: 1200px;
+            background-color: transparent;
         }
         
         .silex-id-1474394621032-2 {
