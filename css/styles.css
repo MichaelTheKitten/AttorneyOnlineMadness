@@ -1,6 +1,11 @@
 
         .body-initial {
             background-color: rgba(42, 149, 35, 1);
+            background-image: url('../assets/Wiki-background.jpg');
+            background-attachment: fixed;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         
         .silex-id-1478366444112-1 {
