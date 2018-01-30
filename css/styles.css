@@ -1,11 +1,11 @@
 
-        .body-initial {
+                .body-initial {
             background-color: rgba(42, 149, 35, 1);
             background-image: url('../assets/Wiki-background.jpg');
             background-attachment: fixed;
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
         }
         
         .silex-id-1478366444112-1 {
@@ -89,29 +89,34 @@
         }
         
         .silex-id-1517066312586-0 {
+            height: 1000px;
+            overflow: hidden;
+            top: 0;
+            left: 0;
             width: 1200px;
-            background-color: rgb(255, 255, 255);
-            min-height: 1000px;
-            top: 0px;
-            left: 0px;
-        }
-        
-        .silex-id-1478366450713-3 {
-            top: 100px;
-            left: NaNpx;
-            background-color: transparent;
-        }
-        
-        .silex-id-1478366450713-2 {
-            min-height: 100px;
-            background-color: transparent;
-            width: 1200px;
-        }
-        
-        .silex-id-1516473815150-13 {
-            width: 903px;
-            min-height: 68px;
-            top: 21px;
-            left: 140px;
-        }
+            <style>.embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                max-width: 100%;
+                .embed-container iframe,
+                .embed-container object,
+                .embed-container embed {
+                    position: absolute;
+                }
+                .silex-id-1478366450713-3 {
+                    top: 100px;
+                    left: NaNpx;
+                    background-color: transparent;
+                }
+                .silex-id-1478366450713-2 {
+                    min-height: 100px;
+                    background-color: transparent;
+                    width: 1200px;
+                }
+                .silex-id-1516473815150-13 {
+                    width: 903px;
+                    min-height: 68px;
+                    top: 21px;
+                    left: 140px;
+                }
     
