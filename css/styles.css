@@ -5,7 +5,7 @@
             background-attachment: fixed;
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
         }
         
         .silex-id-1478366444112-1 {
@@ -26,8 +26,8 @@
         .silex-id-1516472171614-2 {
             width: 722px;
             min-height: 98px;
-            top: 13px;
-            left: 271px;
+            top: 15px;
+            left: 254px;
         }
         
         .silex-id-1474394621033-3 {
